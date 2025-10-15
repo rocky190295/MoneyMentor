@@ -1,0 +1,15 @@
+// FILE: assets/seeded_categories.json
+[
+  "Food",
+  "Transport",
+  "Groceries",
+  "Bills",
+  "Entertainment",
+  "Subscriptions",
+  "Healthcare",
+  "Education",
+  "Savings",
+  "Investment",
+  "Other"
+]
+

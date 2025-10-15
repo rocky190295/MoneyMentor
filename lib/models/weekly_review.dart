@@ -1,0 +1,23 @@
+// FILE: lib/models/weekly_review.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'weekly_review.freezed.dart';
+part 'weekly_review.g.dart';
+
+/// WeeklyReview model for journaling weekly metrics and notes.
+@freezed
+class WeeklyReview with _$WeeklyReview {
+  const factory WeeklyReview({
+    required int id,
+    required DateTime weekStart,
+    required Map<String, double> metrics,
+    String? wins,
+    String? slipUps,
+    String? lessons,
+  }) = _WeeklyReview;
+
+  factory WeeklyReview.fromJson(Map<String, dynamic> json) => _$WeeklyReviewFromJson(json);
+}
+
+/// Next Steps:
+/// - Provide typed metrics schema or dropdowns for common metrics in UI.
