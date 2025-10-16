@@ -28,10 +28,10 @@ dependencies:
   path: ^1.8.3
 
   # Charts & visualization
-  fl_chart: ^1.1.1
+  fl_chart: ^0.60.0
 
   # Exports & printing
-  csv: ^6.0.0
+  csv: ^5.0.0
   pdf: ^3.9.0
   printing: ^5.10.5
 
@@ -46,13 +46,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^2.0.0
 
   # Codegen tools
-  build_runner: ^2.7.2
+  build_runner: ^2.4.6
   drift_dev: ^2.28.3
   freezed: ^3.1.0
-  json_serializable: ^6.9.0
+  json_serializable: ^6.6.1
 
   # Mocks & integration
   mockito: ^5.4.0
