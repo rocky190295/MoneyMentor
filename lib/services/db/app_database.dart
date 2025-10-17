@@ -73,18 +73,18 @@ class AppDatabase extends _$AppDatabase {
   // CRUD helpers
   Future<int> insertIncomeExpense(IncomeExpensesCompanion entry) => into(incomeExpenses).insert(entry);
   Future<List<IncomeExpense>> getAllIncomeExpenses() => select(incomeExpenses).get();
-  Future<int> updateIncomeExpenseData(IncomeExpense entry) => update(incomeExpenses).replace(entry);
+  Future<bool> updateIncomeExpenseData(IncomeExpense entry) => update(incomeExpenses).replace(entry);
   Future<int> deleteIncomeExpenseById(int id) => (delete(incomeExpenses)..where((t) => t.id.equals(id))).go();
 
   // Debts
   Future<int> insertDebt(DebtInstrumentsCompanion entry) => into(debtInstruments).insert(entry);
   Future<List<DebtInstrument>> getAllDebts() => select(debtInstruments).get();
-  Future<int> updateDebtData(DebtInstrument entry) => update(debtInstruments).replace(entry);
+  Future<bool> updateDebtData(DebtInstrument entry) => update(debtInstruments).replace(entry);
 
   // Credit cards
   Future<int> insertCard(CreditCardsCompanion entry) => into(creditCards).insert(entry);
   Future<List<CreditCard>> getAllCards() => select(creditCards).get();
-  Future<int> updateCardData(CreditCard entry) => update(creditCards).replace(entry);
+  Future<bool> updateCardData(CreditCard entry) => update(creditCards).replace(entry);
 
   // Payment History
   Future<int> insertPayment(PaymentHistoriesCompanion entry) => into(paymentHistories).insert(entry);

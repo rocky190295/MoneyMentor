@@ -17,6 +17,36 @@ class WeeklyReview with _$WeeklyReview {
   }) = _WeeklyReview;
 
   factory WeeklyReview.fromJson(Map<String, dynamic> json) => _$WeeklyReviewFromJson(json);
+
+  @override
+  // TODO: implement id
+  int get id => throw UnimplementedError();
+
+  @override
+  // TODO: implement lessons
+  String? get lessons => throw UnimplementedError();
+
+  @override
+  // TODO: implement metrics
+  Map<String, double> get metrics => throw UnimplementedError();
+
+  @override
+  // TODO: implement slipUps
+  String? get slipUps => throw UnimplementedError();
+
+  @override
+  Map<String, dynamic> toJson() {
+    // TODO: implement toJson
+    throw UnimplementedError();
+  }
+
+  @override
+  // TODO: implement weekStart
+  DateTime get weekStart => throw UnimplementedError();
+
+  @override
+  // TODO: implement wins
+  String? get wins => throw UnimplementedError();
 }
 
 /// Next Steps:

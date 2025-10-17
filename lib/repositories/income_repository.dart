@@ -10,7 +10,7 @@ class IncomeRepository {
 
   Future<int> createEntry(IncomeExpensesCompanion entry) => db.insertIncomeExpense(entry);
   Future<List<IncomeExpense>> fetchAll() => db.getAllIncomeExpenses();
-  Future<int> updateEntry(IncomeExpense entry) => db.updateIncomeExpenseData(entry);
+  Future<bool> updateEntry(IncomeExpense entry) => db.updateIncomeExpenseData(entry);
   Future<int> deleteEntry(int id) => db.deleteIncomeExpenseById(id);
 
 /// Next Steps:

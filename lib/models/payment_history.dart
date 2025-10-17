@@ -17,6 +17,36 @@ class PaymentHistory with _$PaymentHistory {
   }) = _PaymentHistory;
 
   factory PaymentHistory.fromJson(Map<String, dynamic> json) => _$PaymentHistoryFromJson(json);
+
+  @override
+  // TODO: implement amountPaid
+  double get amountPaid => throw UnimplementedError();
+
+  @override
+  // TODO: implement dateOfPayment
+  DateTime get dateOfPayment => throw UnimplementedError();
+
+  @override
+  // TODO: implement id
+  int get id => throw UnimplementedError();
+
+  @override
+  // TODO: implement instrumentName
+  String get instrumentName => throw UnimplementedError();
+
+  @override
+  // TODO: implement notes
+  String? get notes => throw UnimplementedError();
+
+  @override
+  Map<String, dynamic> toJson() {
+    // TODO: implement toJson
+    throw UnimplementedError();
+  }
+
+  @override
+  // TODO: implement type
+  String get type => throw UnimplementedError();
 }
 
 /// Next Steps:

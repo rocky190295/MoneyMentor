@@ -19,6 +19,44 @@ class DebtInstrument with _$DebtInstrument {
   }) = _DebtInstrument;
 
   factory DebtInstrument.fromJson(Map<String, dynamic> json) => _$DebtInstrumentFromJson(json);
+
+  @override
+  // TODO: implement balance
+  double get balance => throw UnimplementedError();
+
+  @override
+  // TODO: implement emi
+  double get emi => throw UnimplementedError();
+
+  @override
+  // TODO: implement id
+  int get id => throw UnimplementedError();
+
+  @override
+  // TODO: implement minDue
+  double get minDue => throw UnimplementedError();
+
+  @override
+  // TODO: implement name
+  String get name => throw UnimplementedError();
+
+  @override
+  // TODO: implement notes
+  String? get notes => throw UnimplementedError();
+
+  @override
+  // TODO: implement pendingInstallments
+  int get pendingInstallments => throw UnimplementedError();
+
+  @override
+  // TODO: implement priority
+  int get priority => throw UnimplementedError();
+
+  @override
+  Map<String, dynamic> toJson() {
+    // TODO: implement toJson
+    throw UnimplementedError();
+  }
 }
 
 /// Next Steps:

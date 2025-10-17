@@ -28,6 +28,44 @@ class IncomeExpense with _$IncomeExpense {
   }) = _IncomeExpense;
 
   factory IncomeExpense.fromJson(Map<String, dynamic> json) => _$IncomeExpenseFromJson(json);
+
+  @override
+  // TODO: implement amount
+  double get amount => throw UnimplementedError();
+
+  @override
+  // TODO: implement category
+  String get category => throw UnimplementedError();
+
+  @override
+  // TODO: implement date
+  DateTime get date => throw UnimplementedError();
+
+  @override
+  // TODO: implement description
+  String get description => throw UnimplementedError();
+
+  @override
+  // TODO: implement id
+  int get id => throw UnimplementedError();
+
+  @override
+  // TODO: implement notes
+  String? get notes => throw UnimplementedError();
+
+  @override
+  Map<String, dynamic> toJson() {
+    // TODO: implement toJson
+    throw UnimplementedError();
+  }
+
+  @override
+  // TODO: implement typeFixedOrVariable
+  String get typeFixedOrVariable => throw UnimplementedError();
+
+  @override
+  // TODO: implement weekNum
+  int get weekNum => throw UnimplementedError();
 }
 
 /// Next Steps:

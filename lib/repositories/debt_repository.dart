@@ -20,7 +20,7 @@ class DebtRepository {
     return db.transaction(() async {
       final debt = await (db.select(db.debtInstruments)..where((t) => t.id.equals(debtId))).getSingle();
       final newBalance = (debt.balance - amount).clamp(0, double.infinity);
-      await db.update(db.debtInstruments).replace(debt.copyWith(balance: newBalance));
+      await db.update(db.debtInstruments).replace(debt.copyWith(balance: newBalance.toDouble()));
       await db.insertPayment(PaymentHistoriesCompanion.insert(
         dateOfPayment: DateTime.now(),
         instrumentName: debt.name,
