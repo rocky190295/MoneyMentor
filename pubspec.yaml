@@ -28,7 +28,7 @@ dependencies:
   path: ^1.8.3
 
   # Charts & visualization
-  fl_chart: ^0.60.0
+  fl_chart: ^0.68.0
 
   # Exports & printing
   csv: ^5.0.0
